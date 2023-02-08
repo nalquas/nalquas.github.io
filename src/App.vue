@@ -13,7 +13,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import NavBar from './components/NavBar.vue';
 
 export default {
@@ -24,10 +24,5 @@ export default {
 }
 </script>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
-
-#app {
-  font-family: 'Titillium Web', sans-serif;
-}
+<style scoped>
 </style>
