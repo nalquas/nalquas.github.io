@@ -4,3 +4,7 @@
 #app {
   font-family: 'Titillium Web', sans-serif;
 }
+
+article {
+  text-align: justify;
+}

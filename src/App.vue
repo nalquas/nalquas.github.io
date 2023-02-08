@@ -1,15 +1,22 @@
 <template>
-  <div class="container-fluid">
-    <div class="row">
+  <div class="container-lg">
+    <header class="row">
       <div class="col">
         <NavBar></NavBar>
       </div>
-    </div>
-    <div class="row">
+    </header>
+    <main class="row">
       <div class="col">
-        <router-view></router-view>
+        <div>
+          <router-view></router-view>
+        </div>
       </div>
-    </div>
+    </main>
+    <footer class="row">
+      <div class="col">
+        <!-- TODO some footer -->
+      </div>
+    </footer>
   </div>
 </template>
 

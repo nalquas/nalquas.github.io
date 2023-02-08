@@ -1,7 +1,7 @@
 <template>
-  <nav class="navbar navbar-dark bg-secondary navbar-expand-md rounded mt-2 mb-2 ms-0 mr-0">
+  <nav class="navbar navbar-dark bg-secondary navbar-expand-md rounded mt-0 mb-2 ms-0 mr-0">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <router-link to="/" class="navbar-brand">Navbar</router-link>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -11,10 +11,13 @@
             <router-link to="/" class="nav-link" :class="getActive('home')">Overview</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/" class="nav-link disabled" :class="getActive('cv')">CV</router-link>
+            <router-link to="/cv" class="nav-link disabled" :class="getActive('cv')">CV</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/" class="nav-link disabled" :class="getActive('projects')">Projects</router-link>
+            <router-link to="/projects" class="nav-link disabled" :class="getActive('projects')">Projects</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/contact" class="nav-link" :class="getActive('contact')">Contact</router-link>
           </li>
           <li class="nav-item">
             <router-link to="/about" class="nav-link" :class="getActive('about')">About this Website</router-link>
