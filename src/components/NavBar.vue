@@ -8,16 +8,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Overview</a>
+            <router-link to="/" class="nav-link" :class="getActive('home')">Overview</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">CV</a>
+            <router-link to="/" class="nav-link disabled" :class="getActive('cv')">CV</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Projects</a>
+            <router-link to="/" class="nav-link disabled" :class="getActive('projects')">Projects</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">About this Website</a>
+            <router-link to="/about" class="nav-link" :class="getActive('about')">About this Website</router-link>
           </li>
         </ul>
       </div>
@@ -29,7 +29,24 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'NavBar'
+  name: 'NavBar',
+  data() {
+    return {
+      activeLink: 'home'
+    }
+  },
+  methods: {
+    getActive(name) {
+      // Returns 'active' if the name matches the activeLink, and false otherwise
+      return this.activeLink === name && 'active'
+    }
+  },
+  watch: {
+    $route: function (route) {
+      // Go through all nav-link elements
+      this.activeLink = route.name
+    }
+  }
 })
 </script>
 

@@ -7,7 +7,7 @@
     </div>
     <div class="row">
       <div class="col">
-        TODO some content here
+        <router-view></router-view>
       </div>
     </div>
   </div>
