@@ -11,10 +11,10 @@
             <router-link to="/" class="nav-link" :class="getActive('home')">Overview</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/cv" class="nav-link disabled" :class="getActive('cv')">CV</router-link>
+            <router-link to="/cv" class="nav-link" :class="getActive('cv')">CV</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/projects" class="nav-link disabled" :class="getActive('projects')">Projects</router-link>
+            <router-link to="/projects" class="nav-link" :class="getActive('projects')">Projects</router-link>
           </li>
           <li class="nav-item">
             <router-link to="/contact" class="nav-link" :class="getActive('contact')">Contact</router-link>
