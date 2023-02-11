@@ -9,6 +9,9 @@ npm run build
 # navigate into the build output directory
 cd dist
 
+# HACK: Duplicate index.html as '404.html' so vue-router paths work on GitHub Pages
+cp index.html 404.html
+
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
 
