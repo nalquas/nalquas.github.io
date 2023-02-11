@@ -1,12 +1,12 @@
 <template>
-  <nav class="navbar navbar-dark bg-secondary navbar-expand-md rounded mt-0 mb-2 ms-0 mr-0">
-    <div class="container-fluid">
+  <nav class="navbar navbar-dark bg-secondary navbar-expand-md">
+    <div class="container-lg">
       <router-link to="/" class="navbar-brand">Navbar</router-link>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto">
+        <ul class="navbar-nav">
           <li class="nav-item">
             <router-link to="/" class="nav-link" :class="getActive('home')">Overview</router-link>
           </li>
