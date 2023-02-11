@@ -21,6 +21,15 @@ export default {
   components: {
     NavBar,
     Footer
+  },
+  watch: {
+    $route: {
+      immediate: true,
+      handler(to, from) {
+        let pageTitle = (to.meta && to.meta.title) || 'Unknown';
+        document.title = 'Niklas Freund - ' + pageTitle;
+      }
+    }
   }
 }
 </script>

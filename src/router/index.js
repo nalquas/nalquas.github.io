@@ -11,12 +11,12 @@ import NotFound from '../components/NotFound.vue'
 
 // Define some routes
 const routes = [
-    {path: '/', component: Home, name: 'home'},
-    {path: '/cv', component: Resume, name: 'cv'},
-    {path: '/projects', component: Projects, name: 'projects'},
-    {path: '/contact', component: Contact, name: 'contact'},
-    {path: '/about', component: About, name: 'about'},
-    {path: '/:pathMatch(.*)*', component: NotFound, name: 'notfound'}
+    {path: '/', component: Home, name: 'home', meta: {title: 'Overview'}},
+    {path: '/cv', component: Resume, name: 'cv', meta: {title: 'CV'}},
+    {path: '/projects', component: Projects, name: 'projects', meta: {title: 'Projects'}},
+    {path: '/contact', component: Contact, name: 'contact', meta: {title: 'Contact'}},
+    {path: '/about', component: About, name: 'about', meta: {title: 'About'}},
+    {path: '/:pathMatch(.*)*', component: NotFound, name: 'notfound', meta: {title: 'Not Found'}}
 ]
 
 const router = createRouter({
