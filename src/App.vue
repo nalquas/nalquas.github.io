@@ -3,7 +3,7 @@
     <header>
       <NavBar></NavBar>
     </header>
-    <main>
+    <main class="container-lg mt-2 mb-2">
       <router-view></router-view>
     </main>
     <footer>
