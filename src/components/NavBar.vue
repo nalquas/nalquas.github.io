@@ -1,7 +1,10 @@
 <template>
   <nav class="navbar navbar-dark bg-secondary navbar-expand-md">
     <div class="container-lg">
-      <router-link to="/" class="navbar-brand">Navbar</router-link>
+      <router-link to="/" class="navbar-brand">
+        <!--<img src="/images/some-brand-image.png" alt="logo" class="d-inline-block align-text-top me-1" width="32" height="32">-->
+        Niklas Freund
+      </router-link>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
