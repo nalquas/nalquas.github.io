@@ -15,7 +15,7 @@
 
     <!-- Mainfighter -->
     <Hero class="border-top" :reverse="false"
-      :imgSrc="'/images/mainfighter-gameplay.gif'"
+      :imgSrc="'/images/mainfighter-gameplay.gif'" :imgNearestNeighbor="true"
       :hrefPrimary="'https://nalquas.itch.io/mainfighter'"
       :hrefSecondary="'https://github.com/nalquas/mainfighter'"
     >

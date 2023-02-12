@@ -3,7 +3,7 @@
   <div class="container px-4 py-5">
     <div class="row align-items-center g-5 py-5" :class="(this.reverse && 'flex-lg-row-reverse') || 'flex-lg-row'">
       <div class="col-12 col-lg-6">
-        <img :src="this.imgSrc" class="img-fluid border rounded-3 shadow-lg" alt="Image of the product described in the accompanying text" loading="lazy">
+        <img :src="this.imgSrc" class="img-fluid border rounded-3 shadow-lg" :class="this.imgNearestNeighbor && 'img-nearest-neighbor'" alt="Image of the product described in the accompanying text" width="1920" height="1080" loading="lazy">
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold lh-1 mb-3"><slot name="title">Title</slot></h1>
@@ -33,6 +33,10 @@ export default {
       type: String,
       required: true
     },
+    imgNearestNeighbor: {
+      type: Boolean,
+      required: false
+    },
     hrefPrimary: {
       type: String,
       required: false
@@ -46,4 +50,12 @@ export default {
 </script>
 
 <style scoped>
+  .img-nearest-neighbor {
+    /* IE, only works on <img> tags */
+    -ms-interpolation-mode: nearest-neighbor;
+    /* Firefox */
+    image-rendering: crisp-edges;
+    /* Chromium + Safari */
+    image-rendering: pixelated;
+  }
 </style>
