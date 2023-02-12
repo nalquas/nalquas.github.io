@@ -14,7 +14,7 @@
     </Hero>
 
     <!-- Mainfighter -->
-    <Hero class="border-top" :reverse="false"
+    <Hero :reverse="false"
       :imgSrc="'/images/mainfighter-gameplay.gif'" :imgNearestNeighbor="true"
       :hrefPrimary="'https://nalquas.itch.io/mainfighter'"
       :hrefSecondary="'https://github.com/nalquas/mainfighter'"
@@ -26,7 +26,7 @@
     </Hero>
 
     <!-- Blobs of Colour -->
-    <Hero class="border-top" :reverse="true"
+    <Hero :reverse="true"
       :imgSrc="'/images/blobs-of-colour-screenshot01.png'"
       :hrefPrimary="'https://nalquas.itch.io/blobs-of-colour'"
       :hrefSecondary="'https://github.com/nalquas/blobs-of-colour'"

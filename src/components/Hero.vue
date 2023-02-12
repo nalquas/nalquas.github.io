@@ -1,6 +1,6 @@
 
 <template>
-  <div class="container px-4 py-5">
+  <div class="container px-4 py-0">
     <div class="row align-items-center g-5 py-5" :class="(this.reverse && 'flex-lg-row-reverse') || 'flex-lg-row'">
       <div class="col-12 col-lg-6">
         <img :src="this.imgSrc" class="img-fluid border rounded-3 shadow-lg" :class="this.imgNearestNeighbor && 'img-nearest-neighbor'" alt="Image of the product described in the accompanying text" width="1920" height="1080" loading="lazy">
