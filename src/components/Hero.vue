@@ -13,7 +13,7 @@
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
           <slot name="buttons">
             <a type="button" class="btn btn-primary btn-lg px-4 me-md-2" :href="this.hrefPrimary"><slot name="buttonPrimary">Primary</slot></a>
-            <a type="button" class="btn btn-outline-secondary btn-lg px-4" :href="this.hrefSecondary"><slot name="buttonSecondary">Secondary</slot></a>
+            <a type="button" class="btn btn-secondary btn-lg px-4" :href="this.hrefSecondary"><slot name="buttonSecondary">Secondary</slot></a>
           </slot>
         </div>
       </div>
